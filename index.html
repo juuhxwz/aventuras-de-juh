@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,26 +7,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>O Enigma da Ilha da Magia e o Segredo Carioca".</title>
+    <title>O Enigma da Ilha da Magia e o Segredo Carioca</title>
 </head>
 <body>
     <main>
         <div class="passo ativo" id="passo-0">
-             <img src="floresta.jpg" alt="">
-            <p>Você recebe uma pista: Uma moeda antiga, com o desenho de uma asa de morcego, e um bilhete: "A verdade se esconde onde a magia virou pedra." A primeira pista para a próxima fase é a localização de onde as bruxas foram petrificadas.</p>
-            <button class="btn-proximo" data-proximo="1">Praia de Itaguaçu</button>
-            <button class="btn-proximo" data-proximo="2">Inspeção nas Pedras</button>
+            <img src="img/cenario-florianopolis-inicio.png" alt="Cenário de Florianópolis com mar e montanhas">
+            <p>Você é um(a) jovem historiador(a) em **Florianópolis**, a **Ilha da Magia**. Um pacote anônimo chega com uma **moeda antiga** (asa de morcego) e um bilhete: **"A verdade se esconde onde a magia virou pedra."**</p>
+            <p>A primeira pista é clara: o local da lenda das bruxas petrificadas.</p>
+            <button class="btn-proximo" data-proximo="1">Seguir a pista para Itaguaçu</button>
         </div>
+
         <div class="passo" id="passo-1">
-            <p>Você chega em Itaguaçu, famoso pelas formações rochosas que, segundo a lenda, são bruxas petrificadas. Você precisa inspecionar as pedras..</p>
-            <button class="btn-proximo" data-proximo="3">Coletar Informações (ou similar)</button>
-            <button class="btn-proximo" data-proximo="4">Coletar Informações (ou similar)/button>
-                <div class="passo" id="passo-2">
-            <p>Você encontra uma inscrição enigmática nas rochas: "Aquele que busca o segredo deve primeiro provar seu respeito pela ilha. Onde o sol de verão se esconde atrás da Montanha Mágica?" A próxima pista para a próxima fase é a localização da vista do Morro da Cruz.</p>
-            <button class="btn-proximo" data-proximo="5">Investigação em Bibliotecas/Sebos</button>
-            <button class="btn-proximo" data-proximo="6">Explorar Próxima Pista</button>
+            <img src="img/cenario-itaguacu-pedras.png" alt="Formações rochosas na Praia de Itaguaçu, Florianópolis">
+            <p>Você chega na **Praia de Itaguaçu**, famosa pelas rochas que, segundo a lenda, são **bruxas petrificadas**. A brisa salgada sopra, e você sente que a chave está em inspecionar as pedras.</p>
+            <button class="btn-proximo" data-proximo="2">Inspecionar as pedras</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-inscricao-rocha.png" alt="Inscrição antiga e enigmática em uma rocha">
+            <p>Em uma das pedras, você encontra uma inscrição enigmática: **"Aquele que busca o segredo deve primeiro provar seu respeito pela ilha. Onde o sol de verão se esconde atrás da Montanha Mágica?"**</p>
+            <p>A nova pista aponta para um ponto de vista elevado.</p>
+            <button class="btn-proximo" data-proximo="3">Decifrar a pista e buscar o ponto de vista</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-sebo-livros.png" alt="Livros em um sebo no centro de Florianópolis">
+            <p>Para decifrar a **"Montanha Mágica"** e o local exato do sol, você decide procurar um **Mapa Antigo das Lendas de Florianópolis** em sebos ou feiras de artesanato.</p>
+            <button class="btn-proximo" data-proximo="4">Seguir para a próxima decisão</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-encruzilhada.png" alt="Encruzilhada com duas opções de caminho">
+            <p>Você tem certeza que a montanha é o **Morro da Cruz**, mas a localização exata do ponto de vista do pôr do sol é incerta. Qual caminho seguir?</p>
+            <button class="btn-proximo" data-proximo="7">A) Ir direto ao Morro da Cruz (Risco, mas mais rápido)</button>
+            <button class="btn-proximo" data-proximo="5">B) Investigar em sebos e bibliotecas (Mais lento, garante a informação)</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-livro-secreto.png" alt="Livro antigo e raro 'O Livro Secreto da Ilha'">
+            <p>Você passa horas na Biblioteca Pública. Em um sebo antigo, encontra um livro raro com uma dedicatória cifrada: **"O Livro Secreto da Ilha."** Ele revela a verdade sobre as bruxas e a localização do artefato.</p>
+            <button class="btn-proximo" data-proximo="6">Analisar o livro e a pista</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-rio-de-janeiro-cais.png" alt="Vista do Cais do Valongo, Rio de Janeiro">
+            <p>O livro revela que o artefato foi levado ao **Rio de Janeiro**, a um lugar de **"grandes festas e correntes."** A nova pista aponta para o **Cais do Valongo**, no centro histórico carioca.</p>
+            <button class="btn-proximo" data-proximo="10">Viajar para o Rio de Janeiro</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-bussola-cristal.png" alt="Bússola de cristal brilhante">
+            <p>Você chega ao **Morro da Cruz** e, após alguma busca, a inscrição o(a) leva a um ponto de observação incomum. Lá, sob uma pedra solta, você acha uma **bússola de cristal**. Mas você ainda precisa saber para onde ir...</p>
+            <button class="btn-proximo" data-proximo="5">Voltar para a biblioteca para saber o destino (Passo 5)</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="img/cenario-portal-lagoa.png" alt="Portal de energia se abrindo na Lagoa da Conceição">
+            <p>Usando a bússola de cristal sobre o mapa no Livro Secreto, ela aponta fortemente para um ponto na água: um antigo portal na **Lagoa da Conceição**. O portal está dormente.</p>
+            <button class="btn-proximo" data-proximo="9">Tentar ativar o portal</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-copacabana-reveillon.png" alt="Praia de Copacabana com queima de fogos">
+            <p>O portal precisa de uma **chave de energia**. A pista no livro diz: **"Onde o mar e a fé se unem no réveillon."** Nova Pista: a praia de **Copacabana, Rio de Janeiro**.</p>
+            <button class="btn-proximo" data-proximo="10">Viajar imediatamente para o Rio</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-viagem-rio.png" alt="Avião chegando ao Rio de Janeiro com o Pão de Açúcar ao fundo">
+            <p>Você decide viajar imediatamente para o Rio. Sua missão: encontrar a **Chave de Energia** em Copacabana para ativar o portal em Florianópolis.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar Copacabana</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-chave-oxala.png" alt="Vendedor de água de coco entregando um amuleto">
+            <p>Na orla de Copacabana, seguindo as instruções do livro, você encontra um vendedor de água de coco. Ele lhe entrega um pequeno objeto: a **Chave de Oxalá** (símbolo de fé e tradição carioca). A chave de energia está em suas mãos!</p>
+            <button class="btn-proximo" data-proximo="12">Retornar ao Cais do Valongo para a etapa final</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/cenario-artefato-final.png" alt="Artefato de poder em uma câmara secreta subterrânea no Cais do Valongo">
+            <p>No **Cais do Valongo** (o local das "grandes festas e correntes"), a Chave de Oxalá reage. Ela revela uma **câmara secreta subterrânea** onde o artefato final está escondido. Você encontrou o segredo que unia a magia de Santa Catarina à força histórica do Rio de Janeiro!</p>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
